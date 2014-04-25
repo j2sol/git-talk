@@ -1,0 +1,15 @@
+---
+header:
+  author: Jesse Keating and Adam Monson
+  title: Further Reading
+  description: More info!
+
+slides:
+  -
+    - nested:
+      -
+        - h1: Further Reading
+        - ul:
+          - Fork this talk -- https://github.com/j2sol/git-talk
+          - Read Pro Git -- http://progit.org Now. Do it now.
+          - Stick around for intermediate topics

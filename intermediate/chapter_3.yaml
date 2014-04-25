@@ -1,0 +1,48 @@
+---
+header:
+  author: Jesse Keating and Adam Monson
+  title: Intermediate Git
+  description: Intermediate git topics
+
+slides:
+  -
+    - nested:
+      -
+        - h1: Advanced branch work
+        - ul:
+          - cherry-pick
+          - rebases
+          - merge conflicts
+      -
+        - h2: Cherry picking
+        - p: diff-and-apply from anywhere to anywhere
+        - p: consider '-x' to provide bread crumbs
+        - code: |
+            $ git cherry-pick -x COMMIT
+        - class_notes: |
+            Cherry pick allows you to take one or more commits from one place
+            and put them in your tree. -x leaves bread crumbs. A way to get
+            changes without having to do a merge.
+      -
+        - h2: Rebasing
+        - p: A rebase re-plays a set of commits onto a newly merged head,
+             presenting a continuous flow of history instead of a jagged
+             set of merges.
+        - p: Rebases can be done done at pull time.
+        - code: |
+            $ git rebase master
+            $ git pull --rebase
+        - class_notes: |
+            Rebase is powerful, useful, and confusing. You can think of your
+            commits like a pile of cards. You can take a few cards off the top
+            of the deck, add some more cards from a different deck, then put
+            your cards back on top. Rebase does alter history, so be careful
+            with using it on shared branches.
+      -
+        - h2: Merge conflicts
+        - p: Conflicts happen. There are some tools to work with them,
+             but typically conflicts require a human to make a decision
+        - p: Git will guide you through the steps necessary to resolve.
+        - class_notes: |
+            Create a conflict between branchs and attempt to merge.
+            Walk through the steps necessary to resolve it.

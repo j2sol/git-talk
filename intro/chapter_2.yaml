@@ -1,0 +1,46 @@
+---
+header:
+  author: Jesse Keating and Adam Monson
+  title: What is Git?
+  description: An introduction to git source control
+
+slides:
+  -
+    - nested:
+      -
+        - h1: What is git?
+      -
+        - h2: Snapshot management
+        - p: 'Each "commit" is a snapshot of the tree instead of patches'
+        - p: Much like a mini filesystem, copy-on-write
+        - class_notes: |
+            Git is a version control system. But unlike other VCS which
+            consider an initial version of a file and then a series of
+            deltas to that file, git takes a snapshot of the entire tree
+            at every commit, much like a mini filesystem.
+      -
+        - h2: Distributed
+        - ul:
+          - Everybody gets a complete copy of the tree and metadata
+          - Nearly everything is done locally, great for offline
+          - Empowering for contributors to collaborate
+        - class_notes: |
+            While git can be used as a local version control system or
+            centralized VCS, it really shines as a distributed VCS.
+            Clients don't just simply check out working files from a central
+            source, they fully mirror the repository. This has many advantages
+            such as elimination of SPOFs, enhanced collaboration, and
+            great offline capabilities.
+      -
+        - h2: Designed around multiple contributors
+        - ul:
+          - Mulitple tools exist to easily pass changes around
+          - Differentiates between author, committer (and pusher, not recorded)
+      -
+        - h2: Git is better than everything
+        - p: http://thkoch2001.github.io/whygitisbetter/
+        - class_notes: |
+            Seriously. There are a lot of options out there, many of them good.
+            git just happens to be better than the rest (in my opinion) for a
+            variety of reasons. It's not perfect, by far, but it's the least
+            bad choice.

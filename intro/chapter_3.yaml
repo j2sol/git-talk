@@ -1,0 +1,97 @@
+---
+header:
+  author: Jesse Keating and Adam Monson
+  title: Getting Started
+  description: An introduction to git source control
+
+slides:
+  -
+    - nested:
+      -
+        - h1: Getting Started
+      -
+        - h2: Creating a git repository
+        - code: |
+            $ mkdir project
+            $ cd project
+            $ git init .
+        - class_notes: |
+            Make a project directory to work in. git init makes it a repo.
+            That's it!
+      -
+        - h2: Showing status of your repository
+        - code: |
+            $ git status
+            # On branch master
+            #
+            # Initial commit
+            #
+        - class_notes: |
+            git status is how you see what's going on. Use it often.
+      -
+        - h2: Adding files to be tracked
+        - code: |
+            $ echo "Hello World" > README
+            $ git add README
+            $ git status
+        - class_notes: |
+            Use git add to add files to be tracked. Status will show
+            the new file to be committed.
+      -
+        - h2: Committing changes
+        - code: |
+            $ git commit (-v)
+        - p: Write a proper commit message (https://mifosforge.jira.com/wiki/display/MIFOS/Commit+Log+Guide)
+        - class_notes: |
+            git commit is the utility used to make commits. Brings up an
+            editor to fill in a commit message. You can use -v to see the
+            change as you commit it, which is quite handy! Also, write a
+            proper message.
+      -
+        - h2: Showing changes
+        - code: |
+            $ git diff
+            $ git log (-p)
+            $ git show (HASH)
+        - class_notes: |
+            Make some more commits and show them with diff, log, and show.
+      -
+        - h2: Working with a remote repo
+        - p: git clone is used to copy a repo to work with
+        - code: |
+            $ mkdir ../myclones
+            $ cd ../myclones
+            $ git clone ../project
+        - class_notes: |
+            Create a clone to work with to show changes between two.
+            Then add some content in one or the other.
+      -
+        - h2: Pulling changes
+        - p: git pull will bring changes into our clone
+        - p: git pull is a fetch and a merge
+        - code: |
+            $ git pull
+        - class_notes: |
+            Then add some content in one or the other.
+      -
+        - h2: Pushing changes
+        - p: git push shares changes with the remote
+        - p: use the --force (sparingly)
+        - code: |
+            $ git push
+        - class_notes: |
+            Push changes from one repo to another.
+            Set up a scenario to force push and show the consequence
+      -
+        - h2: Tagging revisions
+        - p: tags are human links to revision hashes
+        - p: can be lightweight or annoated
+        - p: can be crypto signed with gpg key
+        - code: |
+            $ git tag (-a) HASH
+            $ git show TAG
+            $ git log TAG
+        - class_notes: |
+            Tags make a human readable references. Useful for releases.
+            annotated gives a commit message capability. Tags are shared
+            across clones, not unique to clones.

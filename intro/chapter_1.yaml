@@ -1,0 +1,28 @@
+---
+header:
+  author: Jesse Keating and Adam Monson
+  title: git init
+  description: An introduction to git source control
+
+slides:
+  -
+    - nested:
+      -
+        - h1: What will be covered
+        - ul:
+          - introduction to git commands
+          - enough skills to be functional with git
+          - a base understanding of the concepts and utilities
+      -
+        - h2: Who's this guy?
+        - ul:
+          - Sysadmin, developer, devops
+          - automator of things
+          - 7 years as Fedora Release Engineer
+          - Currently DevOps for Rackspace Public Cloud (Compute)
+      -
+        - h1: Thanks!
+        - ul:
+          - Thank you for coming
+          - Thank you LFNW, BLUG, and BTC for hosting
+          - Thank you all the sponsors!

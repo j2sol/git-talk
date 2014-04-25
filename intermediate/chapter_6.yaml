@@ -1,0 +1,15 @@
+---
+header:
+  author: Jesse Keating and Adam Monson
+  title: Intermediate Git
+  description: Intermediate git topics
+
+slides:
+  -
+    - nested:
+      -
+        - h1: Questions / Comments
+        - ul:
+          - https://github.com/j2sol/git-talk
+          - "@iamjkeating"
+          - jlk on Freenode

@@ -1,0 +1,43 @@
+---
+header:
+  author: Jesse Keating and Adam Monson
+  title: Branching
+  description: Having no fear!
+
+slides:
+  -
+    - nested:
+      -
+        - h1: Git Branches for fun and profit
+        - class_notes: |
+            Git branches are very cheap. They are unique per-clone.
+            Thay can exist entirely for your own usage and never shared,
+            or they can be long lived coordinated different stream of
+            development.
+      -
+        - h2: Reasons to branch
+        - ul:
+          - keeps master branch in a working state
+          - keep teams happy
+          - allows multi-tasking of development
+          - merge changes when ready
+          - point release trees
+        - class_notes: |
+            Keep master working by only putting working changes on it.
+            Allow teams to work on their own branch on a feature before
+            bringing it in. Can work a bit in isolation on a known working
+            starting point.
+      -
+        - h2: Creating a branch
+        - code: |
+            $ git checkout -b BRANCH_NAME
+            $ git branch BRANCH_NAME; git checkout BRANCH_NAME
+        - class_notes: |
+            Can create a branch and check it out as one step.
+            Defaults to creating branch from current tree, but can specify
+            source.
+      -
+        - h2: Merging a branch
+        - code: |
+            $ git checkout master
+            $ git merge BRANCH_NAME

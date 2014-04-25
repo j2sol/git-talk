@@ -1,0 +1,37 @@
+---
+header:
+  author: Jesse Keating and Adam Monson
+  title: Intermediate Git
+  description: Intermediate git topics
+
+slides:
+  -
+    - nested:
+      -
+        - h1: Collaborating with others
+        - ul:
+          - identify a problem
+          - fix the problem
+          - submit the fix upstream
+        - class_notes: |
+            Git is all about collaboration, lets walk through a common
+            workflow.
+      -
+        - h2: Github at a glance
+        - ul:
+          - very popular, integrations with many things
+          - lightening-fast collaboration
+          - proprietary, but most data+history is in git, and APIs
+          - if you can use git, you can use github
+      -
+        - h2: Github workflow
+        - ul:
+          - Clone a repo
+          - Fork the repo on github (optional)
+          - (Add fork to clone)
+          - Create topic branch
+          - Commit change
+          - Push branch to upstream (or fork)
+          - Create Pull Request
+          - Merge Pull Request
+          - Delete topic branch

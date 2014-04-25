@@ -1,0 +1,36 @@
+---
+header:
+  author: Jesse Keating and Adam Monson
+  title: A safety net
+  description: Having no fear!
+
+slides:
+  -
+    - nested:
+      -
+        - h1: A Safety Net
+        - p: Nearly every mistake can be recovered from
+        - p: Nobody knows you screwed up until after you've pushed
+             (and they've pulled)
+      -
+        - h2: Dry Runs
+        - p: Many option shave a dry run (-n, --dry-run)
+        - code: |
+            $ git push -n
+            $ git pull -n
+            $ git commit --dry-run
+      -
+        - h2: Reverting changes to a working file
+        - code: |
+            $ git checkout FILE
+        - class_notes: |
+            git checkout will reset the file to the last commit
+      -
+        - h2: Reverting changes to a working tree
+        - code: |
+            $ git reset (TREEISH)
+        - p: Can be a soft or a hard reset
+        - class_notes: |
+            Hard blows away all changes, even staged. Nuke from orbit.
+            Soft will leave changes and staged stuff, but reset what you would
+            commit to.

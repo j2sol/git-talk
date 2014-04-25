@@ -1,0 +1,41 @@
+---
+header:
+  author: Jesse Keating and Adam Monson
+  title: Intermediate Git
+  description: Intermediate git topics
+
+slides:
+  -
+    - nested:
+      -
+        - h1: Selective commits
+        - ul:
+          - interactive commits
+          - interactive rebase
+          - stash
+      -
+        - h2: Interactive commits
+        - p: Used to pick specific parts of files to commit.
+        - code: |
+            $ git commit -p
+        - class_notes: |
+            Similar to git add -i or -p. Pick parts of changes to commit in
+            to have small logical commits.
+      -
+        - h2: Interactive rebase
+        - p: Used to manipulate history while shuffling commits
+        - code: |
+            $ git rebase -i master
+            $ git rebase -i HEAD^^^
+        - class_notes: |
+            Interactive rebases allow you to manipulate the cards before you
+            put them back on the deck. Merge two cards together, remove a
+            card all together, you've got options.
+      -
+        - h2: Stash
+        - p: Used to store changes without committing them
+        - code: |
+            $ git stash save (NAME)
+            $ git stash apply (NAME)
+        - class_notes: |
+            Walk through stashing some changes

@@ -1,0 +1,14 @@
+---
+header:
+  author: Jesse Keating and Adam Monson
+  title: Intermediate Git
+  description: Intermediate git topics
+
+slides:
+  -
+    - nested:
+      -
+        - h1: Intermediate Git
+        - h3: Git topics for more advanced uses
+        - p: 'Linux Fest Northwest 2014'
+        - p: 'Jesse Keating -- @iamjkeating'

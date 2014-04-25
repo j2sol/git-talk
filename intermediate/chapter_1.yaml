@@ -1,0 +1,27 @@
+---
+header:
+  author: Jesse Keating and Adam Monson
+  title: Intermediate Git
+  description: Intermediate git topics
+
+slides:
+  -
+    - nested:
+      -
+        - h1: What will be covered
+        - ul:
+          - collaboration with others
+          - advanced branch work
+          - selective commits
+          - bug forensics
+        - class_notes: |
+            Collaboration, using github as an example
+            Advanced branch work dealing with rebases, cherry-picking, etc..
+            Interactive commits, and interactive rebases to adjust commits, stash
+            A tour of git-bisect, git grep, git blame
+      -
+        - h2: Thanks!
+        - ul:
+          - Thank you for coming
+          - Thank you LFNW, BLUG, and BTC for hosting
+          - Thank you all the sponsors!

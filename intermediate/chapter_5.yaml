@@ -1,0 +1,46 @@
+---
+header:
+  author: Jesse Keating and Adam Monson
+  title: Intermediate Git
+  description: Intermediate git topics
+
+slides:
+  -
+    - nested:
+      -
+        - h1: Bug forensics
+        - ul:
+          - git bisect
+          - git grep
+          - git blame
+      -
+        - h2: git bisect
+        - p: Super cool tool to isolate bug introductions
+        - code: |
+            $ git bisect start
+            $ git bisect bad
+            $ git checkout GOODTREE
+            $ git bisect good
+            $ git bisect run TEST
+        - class_notes: |
+            Do a demo of bisect to find when a problem was introduced.
+            Really does stress that each commit should result in a working
+            tree.
+      -
+        - h2: Git grep
+        - p: Like regular grep, but with extra git context
+        - p: Can grep current tree or other treeish
+        - p: Can grep subdirs
+        - code: |
+            $ git grep derp
+            $ git grep -C 5 derp
+            $ git grep -C 5 derp origin/oldrelease
+            $ git grep derp subpath/
+      -
+        - h2: Git blame
+        - p: Used to show who committed each line of a file
+        - code: |
+            $ git blame FILE
+        - class_notes: |
+            Only shows the last change, not any previous changes.
+            You can use more options to narrow down file versions.
