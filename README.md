@@ -2,11 +2,7 @@
 
 Git talk by [Jesse Keating](http://raxcloud.blogspot.com/) and [Adam Monsen](http://adammonsen.com/).
 
-To be [presented at SeaGL 2013](http://lanyrd.com/2013/seagl/scpfdh/). Come check it out!
-
-[Generated Slideshow](http://meonkeys.github.io/git-talk/).
-
-[Other talks I've done](http://adammonsen.com/talks).
+To be [presented at LFNW 2014](http://linuxfestnorthwest.org/2014/sessions/git-more-fun-more-profit). Come check it out!
 
 # Copyright and license
 
@@ -18,11 +14,4 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 
 # Build from source
 
-To generate slides from this source code, execute `make`. You'll need pandoc
-installed.
-
-More info on the tools used to create this slideshow:
-
-* <http://johnmacfarlane.net/pandoc/README.html>
-* <http://meyerweb.com/eric/tools/s5/features.html>
-* <http://johnmacfarlane.net/pandoc/README.html#producing-html-slide-shows-with-pandoc>
+Instructions for how to build with revelator are coming.
